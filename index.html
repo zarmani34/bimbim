@@ -188,7 +188,7 @@
           </div>
         </section>
 
-        <section id="messages-section">
+        <!-- <section id="messages-section">
           <h2>Birthday Messages</h2>
           <form id="message-form">
             <input
@@ -205,7 +205,7 @@
             <button type="submit">Post Message</button>
           </form>
           <div id="messages-display"></div>
-        </section>
+        </section> -->
       </main>
 
       <footer>
@@ -279,37 +279,37 @@ Happy 25th, Queen. You make us all so proud. 💖🎉`;
 
       setInterval(createConfetti, 200);
 
-      const name = document.querySelector("#name").value;
-      const message = document.querySelector("#message").value;
+    //   const name = document.querySelector("#name").value;
+    //   const message = document.querySelector("#message").value;
 
-      fetch("https://portfoliobackend-production-fb15.up.railway.app/api/messages/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, message }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Success:", data);
-          // Optionally update the messages section
-        });
+    //   fetch("https://portfoliobackend-production-fb15.up.railway.app/api/messages/", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ name, message }),
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => {
+    //       console.log("Success:", data);
+    //       // Optionally update the messages section
+    //     });
 
-      fetch("https://portfoliobackend-production-fb15.up.railway.app/api/messages/")
-        .then((res) => res.json())
-        .then((data) => {
-          const container = document.querySelector("#message-board");
-          container.innerHTML = "";
-          data.forEach((msg) => {
-            container.innerHTML += `
-        <div class="message">
-          <h4>${msg.name}</h4>
-          <p>${msg.message}</p>
-          <small>${new Date(msg.timestamp).toLocaleString()}</small>
-        </div>
-      `;
-          });
-        });
+    //   fetch("https://portfoliobackend-production-fb15.up.railway.app/api/messages/")
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //       const container = document.querySelector("#message-board");
+    //       container.innerHTML = "";
+    //       data.forEach((msg) => {
+    //         container.innerHTML += `
+    //     <div class="message">
+    //       <h4>${msg.name}</h4>
+    //       <p>${msg.message}</p>
+    //       <small>${new Date(msg.timestamp).toLocaleString()}</small>
+    //     </div>
+    //   `;
+    //       });
+    //     });
     </script>
   </body>
 </html>
