@@ -112,11 +112,10 @@ footer {
 #messages-section {
   padding: 20px;
   max-width: 600px;
-  margin: auto;
+  margin: 1rem auto;
   background-color: #daf1fc;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
 }
 
 #message-form {
