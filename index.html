@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday, BimBim - Our Caring Nurse!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="confetti-container"></div>
+    <div class="container">
+      <header>
+        <h1>Happy Birthday, BimBim!</h1>
+      </header>
+
+      <main>
+        <img
+          src="./images/IMG-20250604-WA0028.jpg"
+          alt="Birthday Sister"
+          class="profile-picture"
+        />
+
+        <div class="book">
+          <div class="book-cover floating" onclick="toggleStory()">
+            Your story
+          </div>
+          <div class="story-content">
+            <p><strong>Chapter 1: The Caring Heart</strong></p>
+            <p>
+              BimBim chose nursing not just as a career, but as a calling to
+              heal, comfort, and bring hope to those in need. Her compassion and
+              dedication shine in every patient she touches.
+            </p>
+            <p><strong>Chapter 2: The Journey</strong></p>
+            <p>
+              Through long shifts, challenging moments, and countless smiles,
+              she has grown into an inspiring nurse who makes a difference every
+              day. Her strength and resilience are a beacon to all who know her.
+            </p>
+            <p><strong>Chapter 3: The Celebration</strong></p>
+            <p>
+              On this special day, we honor not only the wonderful person she is
+              but also the tireless nurse who cares deeply for others. Here’s to
+              more years of love, laughter, and success.
+            </p>
+            <p>The story continues...</p>
+          </div>
+          <p class="message">
+            Watching you grow into the incredible woman you are today has been
+            one of the greatest joys of my life. Your strength, your compassion
+            as a nurse, and the way you light up every room — it all makes me so
+            proud to call you my sister. Happy birthday, my hero in scrubs. I
+            love you deeply, and I’ll always be here cheering you on.
+          </p>
+        </div>
+
+        <div class="writing-section">
+          <i class="fas fa-heartbeat icon floating"></i>
+          <h2>A Birthday Note</h2>
+          <div id="typewriter"></div>
+          <div class="flower">
+            <div
+              class="petal"
+              style="transform: rotate(0deg) translateY(-20px)"
+            ></div>
+            <div
+              class="petal"
+              style="transform: rotate(72deg) translateY(-20px)"
+            ></div>
+            <div
+              class="petal"
+              style="transform: rotate(144deg) translateY(-20px)"
+            ></div>
+            <div
+              class="petal"
+              style="transform: rotate(216deg) translateY(-20px)"
+            ></div>
+            <div
+              class="petal"
+              style="transform: rotate(288deg) translateY(-20px)"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Memory Section -->
+        <section class="memories-section">
+          <h2>📷 Memories</h2>
+          <div class="memory-wall">
+            <!-- Example images and videos -->
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0067.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0053.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0055.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0024.mp4" controls></video>
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0058.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-left">
+              <img src="./images/IMG-20250604-WA0024.jpg" alt="memory 1" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0018.mp4" controls></video>
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0025.jpg" alt="memory 2" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0054.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-left">
+              <img src="./images/IMG-20250604-WA0026.jpg" alt="memory 3" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0027.jpg" alt="memory 4" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0022.mp4" controls></video>
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0034.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0035.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0051.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0019.mp4" controls></video>
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0052.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0030.jpg" alt="memory 7" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0031.jpg" alt="memory 8" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0032.jpg" alt="memory 9" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0020.mp4" controls></video>
+            </div>
+
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0057.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0028.jpg" alt="memory 5" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0056.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0021.mp4" controls></video>
+            </div>
+
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0059.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0060.jpg" alt="memory 10" />
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0029.jpg" alt="memory 6" />
+            </div>
+            <div class="memory-item rotate-right">
+              <video src="./images/VID-20250604-WA0025.mp4" controls></video>
+            </div>
+            <div class="memory-item rotate-random">
+              <img src="./images/IMG-20250604-WA0066.jpg" alt="memory 10" />
+            </div>
+          </div>
+        </section>
+
+        <section id="messages-section">
+          <h2>Birthday Messages</h2>
+          <form id="message-form">
+            <input
+              type="text"
+              id="name-input"
+              placeholder="Your name"
+              required
+            />
+            <textarea
+              id="message-input"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+            <button type="submit">Post Message</button>
+          </form>
+          <div id="messages-display"></div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Made with ❤️ by Zarmani for BimBim</p>
+      </footer>
+    </div>
+
+    <script>
+      // Toggle the story content display
+      function toggleStory() {
+        const storyContent = document.querySelector(".story-content");
+        if (storyContent.style.display === "block") {
+          storyContent.style.display = "none";
+        } else {
+          storyContent.style.display = "block";
+        }
+      }
+
+      // Typewriter effect for the birthday note
+      const typewriterText = `Dear BimBim,
+
+🌟 Happy 25th Birthday, Sis! 🌟
+
+Today, I’m not just celebrating your birthday — I’m celebrating you.
+Your strength, your drive, your growth, and every single step you’ve taken to become the incredible woman you are today.
+
+Watching you push through challenges, achieve your goals, and stay true to yourself has been one of the greatest privileges of my life. I’m beyond proud of how far you’ve come — not just in what you’ve accomplished, but in how beautifully you carry yourself through it all.
+
+You’re more than a sister — you’re a role model, a force, and a constant reminder that greatness takes courage, faith, and heart. You’ve shown all of that and more.
+
+As you step into 25, I hope you take a moment to truly see the amazing person you’ve become. The world is lucky to have you in it, and I’m even luckier to have you as my sister.
+
+Here’s to more achievements, deeper joy, and a future as bright as your spirit.
+I love you, and I’ll always be your biggest cheerleader.
+
+Happy 25th, Queen. You make us all so proud. 💖🎉`;
+
+      let index = 0;
+      const speed = 40; // typing speed in ms
+
+      function typeWriter() {
+        if (index < typewriterText.length) {
+          document.getElementById("typewriter").innerHTML +=
+            typewriterText.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      typeWriter();
+
+      // Confetti effect
+      const confettiContainer = document.querySelector(".confetti-container");
+
+      function createConfetti() {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        confetti.style.left = Math.random() * window.innerWidth + "px";
+        confetti.style.backgroundColor = `hsl(${
+          Math.random() * 360
+        }, 70%, 60%)`;
+        confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+        confetti.style.opacity = Math.random();
+
+        confettiContainer.appendChild(confetti);
+
+        setTimeout(() => {
+          confetti.remove();
+        }, 5000);
+      }
+
+      setInterval(createConfetti, 200);
+
+      const name = document.querySelector("#name").value;
+      const message = document.querySelector("#message").value;
+
+      fetch("https://portfoliobackend-production-fb15.up.railway.app/api/messages/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, message }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+          // Optionally update the messages section
+        });
+
+      fetch("https://portfoliobackend-production-fb15.up.railway.app/api/messages/")
+        .then((res) => res.json())
+        .then((data) => {
+          const container = document.querySelector("#message-board");
+          container.innerHTML = "";
+          data.forEach((msg) => {
+            container.innerHTML += `
+        <div class="message">
+          <h4>${msg.name}</h4>
+          <p>${msg.message}</p>
+          <small>${new Date(msg.timestamp).toLocaleString()}</small>
+        </div>
+      `;
+          });
+        });
+    </script>
+  </body>
+</html>

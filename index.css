@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Lora", serif;
+  background-color: #e8f0f2;
+  color: #2e3a59;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+header {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+h1 {
+  font-size: 2.8em;
+  color: #3a8fb7;
+}
+.profile-picture {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  object-fit: cover;
+  border: 6px solid #3a8fb7;
+  box-shadow: 0 4px 12px rgba(58, 143, 183, 0.5);
+}
+.book {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.book-cover {
+  width: 160px;
+  height: 210px;
+  background-color: #3a8fb7;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease;
+  background-image: url("./images/IMG-20250604-WA0027.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.book-cover:hover {
+  transform: scale(1.05);
+}
+.story-content {
+  display: none;
+  margin-top: 22px;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #4a5a6a;
+}
+.message {
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+  color: #3a8fb7;
+  font-weight: 600;
+}
+.writing-section {
+  background-color: #daf1fc;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.icon {
+  font-size: 2.4em;
+  color: #3a8fb7;
+  margin-bottom: 12px;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #637a8e;
+}
+#typewriter {
+  min-height: 150px;
+  position: relative;
+  font-size: 1.1em;
+  color: #2e3a59;
+}
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+#messages-section {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #daf1fc;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#message-form input,
+#message-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#messages-display {
+  margin-top: 20px;
+}
+
+#messages-section button {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #3a8fb7;
+}
+.message {
+  background-color: #ffe;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.message strong {
+  color: #c71585;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3a8fb7;
+  border-radius: 3px;
+}
+.flower {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+}
+.petal {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #6ec1e4;
+  border-radius: 50%;
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+  h1 {
+    font-size: 2.3em;
+  }
+  .book-cover {
+    width: 140px;
+    height: 180px;
+  }
+  .profile-picture {
+    width: 160px;
+    height: 160px;
+  }
+}
+/* Memory section styles */
+.memory-section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.memory-section h2 {
+  color: #3a8fb7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.memory-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.memory-gallery img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(58, 143, 183, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.memory-gallery img:hover {
+  transform: scale(1.1);
+}
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  /* The duration and delay you already assign dynamically in JS */
+}
+.memories-section {
+  background: #fff8f0;
+  padding: 40px;
+  text-align: center;
+}
+
+.memory-wall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+.memory-item {
+  width: 200px;
+  height: fit-content;
+  max-width: 90vw;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: white;
+  padding: 5px;
+  border: 2px solid #ddd;
+  transform-origin: center;
+  z-index: 1;
+}
+
+.memory-item img,
+.memory-item video {
+  width: 100%;
+  /* height: auto; */
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.rotate-left {
+  transform: rotate(-8deg);
+}
+.rotate-right {
+  transform: rotate(6deg);
+}
+.rotate-random {
+  transform: rotate(-3deg);
+}
+
+.memory-item:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 10;
+}
